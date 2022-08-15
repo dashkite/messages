@@ -1,4 +1,5 @@
 import * as Meta from "@dashkite/joy/metaclass"
+import { expand } from "@dashkite/polaris"
 
 class Messages
 
@@ -17,12 +18,13 @@ class Messages
   add: ( codes ) -> Object.assign @codes, codes
 
   @expand: ( text, context = {}) ->
-    f = new Function "{#{ ( Object.keys context ).join ',' }}",
-      "return `#{ text.replace '`', '\`' }`"
-    f context
+    expand text, context
 
   message: ( code, context = {} ) ->
-    "#{ @prefix }#{ Messages.expand @codes[ code ], context }"
+    if @codes[ code ]?
+      "#{ @prefix }#{ Messages.expand @codes[ code ], context }"
+    else
+      throw new Error "messages: invalid message code [ #{code} ]"
 
   failure: ( code, context = {} ) ->
     error = new Error "#{ @message code, context }"
