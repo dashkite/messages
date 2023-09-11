@@ -29,10 +29,11 @@
     "@dashkite/amen-console": "^0.0.2",
     "@dashkite/assert": "^0.1.3",
     "@dashkite/genie": "link:../genie",
-    "@dashkite/genie-modules": "link:../genie-modules",
-    "@dashkite/polaris": "link:../polaris"
+    "@dashkite/genie-coffee": "link:../genie-coffee",
+    "@dashkite/genie-yaml": "link:../genie-yaml"
   },
   "dependencies": {
-    "@dashkite/joy": "^0.3.16"
+    "@dashkite/joy": "^0.3.16",
+    "@dashkite/polaris": "link:../polaris"
   }
 }
