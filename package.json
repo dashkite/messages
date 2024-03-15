@@ -36,7 +36,7 @@
     "@dashkite/genie-yaml": "link:../genie-yaml"
   },
   "dependencies": {
-    "@dashkite/joy": "^0.3.16",
+    "@dashkite/joy": "link:../joy",
     "@dashkite/polaris": "link:../polaris"
   }
 }

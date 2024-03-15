@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@dashkite/joy':
-    specifier: ^0.3.16
-    version: 0.3.16
+    specifier: link:../joy
+    version: link:../joy
   '@dashkite/polaris':
     specifier: link:../polaris
     version: link:../polaris
@@ -61,6 +61,7 @@ packages:
 
   /@dashkite/joy@0.3.16:
     resolution: {integrity: sha512-dsU0us4j1Pb+zceoBvLbnZ2PbmULkJUtM2vtWLxKmoc1DE4w9SVTiPTe6JWvF0A0vk90ldv+Lc9qEA5x3O+DtQ==}
+    dev: true
 
   /ansi-styles@4.3.0:
     resolution: {integrity: sha512-zbB9rCJAT1rbjiVDb2hqKFHNYLxgtk8NURxZ3IZwD3F6NtxbXZQCnnSi1Lkx+IDohdPlFp222wVALIheZJQSEg==}

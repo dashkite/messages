@@ -1,5 +1,5 @@
 import * as Meta from "@dashkite/joy/metaclass"
-import { expand } from "@dashkite/polaris"
+import { interpolate as expand } from "@dashkite/joy/text"
 
 class Messages
 
