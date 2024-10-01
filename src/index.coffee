@@ -17,10 +17,11 @@ class Messages
 
   add: ( codes ) -> Object.assign @codes, codes
 
-  @expand: ( text, context = {}) ->
-    expand text, context
+  has: ( code ) -> @codes[ code ]?
 
-  message: ( code, context = {} ) ->
+  @expand: ( text, context = {}) -> expand text, context
+
+  expand: ( code, context = {}) ->
     if @codes[ code ]?
       "#{ @prefix }#{ Messages.expand @codes[ code ], context }"
     else
@@ -31,3 +32,4 @@ class Messages
     Object.assign error, { code, context }
 
 export { Messages }
+export default Messages
