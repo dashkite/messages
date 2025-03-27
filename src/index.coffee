@@ -21,6 +21,8 @@ class Messages
 
   @expand: ( text, context = {}) -> expand text, context
 
+  get: ( code ) -> @expand code
+
   expand: ( code, context = {}) ->
     if @codes[ code ]?
       "#{ @prefix }#{ Messages.expand @codes[ code ], context }"
