@@ -1,3 +1,4 @@
+import * as Obj from "@dashkite/joy/object"
 import * as Meta from "@dashkite/joy/metaclass"
 import { interpolate as expand } from "@dashkite/joy/text"
 
@@ -17,15 +18,15 @@ class Messages
 
   add: ( codes ) -> Object.assign @codes, codes
 
-  has: ( code ) -> @codes[ code ]?
+  has: ( code ) -> Obj.getx code, @codes
 
   @expand: ( text, context = {}) -> expand text, context
 
   get: ( code ) -> @expand code
 
   expand: ( code, context = {}) ->
-    if @codes[ code ]?
-      "#{ @prefix }#{ Messages.expand @codes[ code ], context }"
+    if ( template = Obj.getx code, @codes )?
+      "#{ @prefix }#{ Messages.expand template, context }"
     else
       throw new Error "messages: invalid message code [ #{code} ]"
 

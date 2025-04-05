@@ -16,6 +16,6 @@ do ->
     
     test "hello", ->
       assert.equal "Hello, world!",
-        messages.message "hello", name: "world"
+        messages.expand "hello", name: "world"
 
   ]
