@@ -36,7 +36,8 @@
     "@dashkite/genie-yaml": "link:../genie-yaml"
   },
   "dependencies": {
-    "@dashkite/joy": "link:../joy",
-    "@dashkite/polaris": "link:../polaris"
+    "@dashkite/format-text": "link:../format-text",
+    "@dashkite/generic": "link:../generic",
+    "@dashkite/joy": "link:../joy"
   }
 }

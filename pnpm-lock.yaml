@@ -8,12 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@dashkite/format-text':
+        specifier: link:../format-text
+        version: link:../format-text
+      '@dashkite/generic':
+        specifier: link:../generic
+        version: link:../generic
       '@dashkite/joy':
         specifier: link:../joy
         version: link:../joy
-      '@dashkite/polaris':
-        specifier: link:../polaris
-        version: link:../polaris
     devDependencies:
       '@dashkite/amen':
         specifier: ^0.1.2
