@@ -38,6 +38,6 @@
   "dependencies": {
     "@dashkite/format-text": "link:../format-text",
     "@dashkite/generic": "link:../generic",
-    "@dashkite/joy": "link:../joy"
+    "@dashkite/joy": "0.5.0"
   }
 }
