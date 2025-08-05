@@ -1,6 +1,6 @@
 {
   "name": "@dashkite/messages",
-  "version": "0.9.15",
+  "version": "0.9.16",
   "description": "Message catalog",
   "exports": {
     ".": {
