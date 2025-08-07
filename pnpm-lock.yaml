@@ -867,8 +867,8 @@ packages:
   '@dashkite/dolores@0.8.0':
     resolution: {integrity: sha512-ga+AxqsQcUjW3D5J6mCQqTU7GqJsmnlT9OfqYrmPA3lGJSjk0GqJRQb3RIjoqjjXVszeK8vAW3RdJPx0W7OhNw==}
 
-  '@dashkite/drn-loader@0.11.10':
-    resolution: {integrity: sha512-eYDg2FvzUjA7qW0zsV+u/3nA+2Mg4LVKB9F9gU+BMSOx9wz+PFFwJnqeBWS8r7eRVTyxEg7DdqXNYlVxYyH9ag==}
+  '@dashkite/drn-loader@0.11.11':
+    resolution: {integrity: sha512-+8PVQ7hQcvlNaSu015yglk3Mp+HJbTec0jXxTZYKxGTSSrTBgL9fg8DVuYO2fxxDZBTkxwtTnXPYGcubhR6Xmw==}
 
   '@dashkite/drn-sky@0.8.11':
     resolution: {integrity: sha512-8MuuHjG9Na//khdH4LRJmwreB+zhT7l8kKo1Yvfwuj1y3DYRb4lgPVKAJx7t/9+YndTNY5uQbrTvq5zCxdmeZA==}
@@ -888,8 +888,8 @@ packages:
   '@dashkite/genie-coffee@0.9.0':
     resolution: {integrity: sha512-8Ukg3m/nQnxbmrww313lzYJJQRAxhRgbPpbqCWj7ovzS8LejoA1OGbbjRd8Ew7SdzZrJ6WYY7d08VxIbim72mw==}
 
-  '@dashkite/genie-drn@0.12.13':
-    resolution: {integrity: sha512-nz5K6ZLKLtf/7kr85gk5m74mG+YYRDKs/u5D6bEjAqiOn33Pr3lCXJD53pn2mhvtzrtCcNe6JeehUNR3pLkc3g==}
+  '@dashkite/genie-drn@0.12.14':
+    resolution: {integrity: sha512-o3sEXot1VlmZgyAx6JSZQxZULqdRB3S2eVKh4hfl4PgiNdeypZoKq7P2oQbbOhjxSLYiJbfkwJIJs4uHOeiemA==}
 
   '@dashkite/genie-module@0.5.19':
     resolution: {integrity: sha512-agnXvDyyKJVkhtYyZR+bW1kUunGyz4tfyTiZ0UlZxDBHopUYPqIQ2tHgwzDhUcefLaRr83Ljs8SCjKegmiZrZA==}
@@ -4017,7 +4017,7 @@ snapshots:
       - aws-crt
       - encoding
 
-  '@dashkite/drn-loader@0.11.10': {}
+  '@dashkite/drn-loader@0.11.11': {}
 
   '@dashkite/drn-sky@0.8.11(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
@@ -4071,10 +4071,10 @@ snapshots:
       - '@swc/helpers'
       - supports-color
 
-  '@dashkite/genie-drn@0.12.13':
+  '@dashkite/genie-drn@0.12.14':
     dependencies:
       '@dashkite/drn': 0.12.13
-      '@dashkite/drn-loader': 0.11.10
+      '@dashkite/drn-loader': 0.11.11
       '@dashkite/masonry-hooks': 0.8.0
       '@dashkite/zephyr': 0.9.0
       js-yaml: 4.1.0
@@ -4085,7 +4085,7 @@ snapshots:
   '@dashkite/genie-module@0.5.19(@aws-sdk/credential-provider-node@3.529.0)':
     dependencies:
       '@dashkite/drn-sky': 0.8.11(@aws-sdk/credential-provider-node@3.529.0)
-      '@dashkite/genie-drn': 0.12.13
+      '@dashkite/genie-drn': 0.12.14
       '@dashkite/genie-publish': 0.9.12(@aws-sdk/credential-provider-node@3.529.0)
     transitivePeerDependencies:
       - '@aws-sdk/credential-provider-node'
